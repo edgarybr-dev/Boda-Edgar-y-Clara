@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clara &amp; Edgar &middot; 24.03.2027</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<script src="invitados.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600&family=Instrument+Serif:ital@0;1&family=Archivo+Narrow:wght@400;500;600;700&family=EB+Garamond:ital,wght@1,400;1,500&family=Cormorant+Garamond:ital,wght@1,300;1,400&family=Great+Vibes&family=Sacramento&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#B05A3B;background-image:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Cfilter id=%22n%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3CfeColorMatrix type=%22saturate%22 values=%220%22/%3E%3C/filter%3E%3Crect width=%22200%22 height=%22200%22 filter=%22url(%23n)%22 opacity=%220.5%22/%3E%3C/svg%3E');background-size:200px 200px;background-blend-mode:soft-light;font-family:'Archivo Narrow',sans-serif}
+#dc-root,.sc-host{width:100%;min-height:100vh}
+a{color:#C4866A}a:hover{color:#B05A3B}
+input{font:inherit;color:inherit}
+input:focus{outline:none}
+::placeholder{color:#3B2A20;opacity:1}
+input::placeholder{color:#3B2A20;opacity:1}
+input[data-login]::placeholder{color:rgba(247,236,217,.6);opacity:1}
+input[data-soft]::placeholder{color:rgba(59,42,32,.42);opacity:1}
+::selection{background:#B05A3B;color:#F5E8D2}
+*{scrollbar-width:thin;scrollbar-color:rgba(247,236,217,.45) transparent}
+::-webkit-scrollbar{width:7px;height:7px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:rgba(247,236,217,.4);border-radius:4px}
+::-webkit-scrollbar-thumb:hover{background:rgba(247,236,217,.62)}
+@keyframes fu{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes fi{from{opacity:0}to{opacity:1}}
+</style></helmet>
+
+<div style="position:relative;width:100%;max-width:430px;min-height:100vh;margin:0 auto;overflow:hidden;background:#F5E8D2;color:#B05A3B;font-family:'Archivo Narrow',sans-serif;box-shadow:0 18px 60px rgba(28,26,12,.42)">
+
+
+<sc-if value="{{ i.showBand }}"><div style="position:absolute;inset:0;pointer-events:none;z-index:7;background-image:url('assets/paper-cream.png');background-size:600px 600px;mix-blend-mode:soft-light;opacity:.5"></div></sc-if>
+
+<sc-if value="{{ i.isLogin }}" hint-placeholder-val="{{ true }}">
+<div style="position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;background:#B05A3B;animation:fi .6s ease both">
+  <div style="position:relative;z-index:1;min-height:100%;display:flex;flex-direction:column;background:#B05A3B;color:#F7ECD9">
+  <div style="position:absolute;inset:0;pointer-events:none;z-index:6;background-image:url('assets/paper-kraft.png');background-size:520px 520px;mix-blend-mode:soft-light;opacity:.22"></div>
+  <div style="position:absolute;inset:0;pointer-events:none;z-index:6;background:radial-gradient(120% 90% at 50% 40%,rgba(255,240,220,.07),transparent 60%),linear-gradient(180deg,rgba(74,32,18,.10),transparent 22%,transparent 76%,rgba(74,32,18,.14))"></div>
+  <div style="display:flex;flex-direction:column;flex:1 0 auto">
+  <div style="position:relative;z-index:1;padding:34px 30px 0;display:flex;justify-content:space-between;align-items:baseline;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(247,236,217,.8)">
+    <span style="flex:none;white-space:nowrap">{{ i.t.kicker }}</span>
+    <span style="display:flex;gap:13px;flex:none"><span onClick="{{ i.setEs }}" style="cursor:pointer;opacity:{{ i.opEs }}">ES</span><span onClick="{{ i.setCa }}" style="cursor:pointer;opacity:{{ i.opCa }}">CA</span></span>
+  </div>
+  <div style="position:relative;z-index:1;flex:1 0 auto;display:flex;flex-direction:column;justify-content:center;padding:0 30px;min-height:0">
+    <div style="position:relative;padding:66px 0 6px">
+      <div style="font-family:'Playfair Display',serif;font-style:italic;font-weight:400;line-height:.78;letter-spacing:-.03em;color:rgba(245,232,210,.88);text-shadow:0 1.5px 0 rgba(255,250,238,.18),0 -1px 1px rgba(92,42,26,.6),0 -2px 3px rgba(92,42,26,.35);font-size:152px;text-align:right;white-space:nowrap;margin-right:-14px">Clara</div>
+
+      <div style="position:relative;z-index:1;font-family:'Playfair Display',serif;font-style:italic;font-weight:400;line-height:.78;letter-spacing:-.03em;color:rgba(245,232,210,.88);text-shadow:0 1.5px 0 rgba(255,250,238,.18),0 -1px 1px rgba(92,42,26,.6),0 -2px 3px rgba(92,42,26,.35);font-size:152px;text-align:left;white-space:nowrap;margin:7px 0 0 -10px">Edgar</div>
+    </div>
+    <div style="position:relative;margin-top:74px;min-height:66px;display:flex;justify-content:space-between;align-items:flex-end;gap:14px;font-size:11px;line-height:1.95;letter-spacing:.14em;text-transform:uppercase;color:rgba(247,236,217,.85)">
+      <span style="flex:none">24.03.2027<br>Bigues i Riells</span>
+      <img src="assets/sprig-t.png" alt="" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);pointer-events:none;height:66px;width:auto;display:block;opacity:.9;filter:brightness(.93) drop-shadow(0 1.5px .5px rgba(255,238,220,.42)) drop-shadow(0 -1.5px .5px rgba(74,30,16,.5)) drop-shadow(0 -3px 3px rgba(74,30,16,.22))">
+      <span style="flex:none;text-align:right">Can Ribas<br>de Montbui</span>
+    </div>
+  </div>
+  <div style="position:relative;z-index:1;padding:72px 30px 58px;display:flex;flex-direction:column;gap:20px">
+    <div style="display:flex;flex-direction:column;gap:18px">
+      <input data-login="1" value="{{ i.n }}" onChange="{{ i.setN }}" placeholder="{{ i.t.first }}" style="border:0;border-bottom:.5px solid rgba(247,236,217,.4);background:transparent;padding:8px 0;font-family:'Archivo Narrow',sans-serif;font-size:15px;color:#F7ECD9;transition:border-color .45s ease" style-focus="border-bottom-color:#F7ECD9">
+      <input data-login="1" value="{{ i.s }}" onChange="{{ i.setS }}" placeholder="{{ i.t.last }}" style="border:0;border-bottom:.5px solid rgba(247,236,217,.4);background:transparent;padding:8px 0;font-family:'Archivo Narrow',sans-serif;font-size:15px;color:#F7ECD9;transition:border-color .45s ease" style-focus="border-bottom-color:#F7ECD9">
+    </div>
+    <sc-if value="{{ i.err }}"><div style="font-size:14px;font-weight:400;color:#F7ECD9;opacity:.75">{{ i.err }}</div></sc-if>
+    <div onClick="{{ i.enter }}" style="position:relative;z-index:9;cursor:pointer;border:.5px solid rgba(247,236,217,.5);color:#F7ECD9;text-align:center;padding:16px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;transition:border-color .45s ease,letter-spacing .45s ease" style-hover="border-color:#F7ECD9;letter-spacing:.28em">{{ i.t.enter }}</div>
+  </div>
+  </div>
+  </div>
+</div>
+</sc-if>
+
+<sc-if value="{{ i.isHub }}">
+<div style="position:absolute;inset:0;display:flex;flex-direction:column;animation:fu .5s ease both">
+  <div style="padding:38px 36px 0;display:flex;justify-content:space-between;align-items:baseline;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#3B2A20">
+    <img src="assets/ce-logo-v4.png" alt="C&amp;E" onClick="{{ i.back }}" style="cursor:pointer;flex:none;height:27px;width:auto;display:block;align-self:center;opacity:.88" />
+    <span style="display:flex;align-items:center;gap:13px;flex:none"><span onClick="{{ i.setEs }}" style="cursor:pointer;opacity:{{ i.opEs }}">ES</span><span onClick="{{ i.setCa }}" style="cursor:pointer;opacity:{{ i.opCa }}">CA</span></span>
+  </div>
+  <div style="padding:40px 36px 26px">
+    <div style="font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:82px;line-height:1.1;letter-spacing:-.01em;color:#B05A3B">{{ i.greet }}</div>
+  </div>
+  <div style="flex:1;overflow-y:auto;padding:0 36px 64px">
+    <sc-for list="{{ i.navItems }}" as="it" hint-placeholder-count="5">
+      <div onClick="{{ it.go }}" style="display:flex;gap:18px;align-items:baseline;padding:20px 0;border-top:.5px solid rgba(176,90,59,.18);cursor:pointer;transition:padding-left .45s ease" style-hover="padding-left:7px">
+        <span style="flex:none;font-size:11px;letter-spacing:.18em;color:#C4866A;padding-top:7px">{{ it.n }}</span>
+        <span style="flex:1">
+          <span style="display:block;font-family:'Archivo Narrow',sans-serif;font-weight:600;font-size:16px;line-height:1.45;letter-spacing:.05em;text-transform:uppercase;color:#B05A3B">{{ it.title }}</span>
+          <span style="display:block;font-size:14px;font-weight:400;line-height:1.75;color:#C4866A;margin-top:6px">{{ it.sub }}</span>
+        </span>
+      </div>
+    </sc-for>
+    <div style="border-top:.5px solid rgba(176,90,59,.18);padding-top:18px;display:flex;justify-content:space-between;align-items:center;font-size:11px;font-weight:400;letter-spacing:.18em;text-transform:uppercase;color:#3B2A20">
+      <span style="flex:none">Can Ribas de Montbui</span>
+      <span style="flex:none;width:28px;height:.5px;background:rgba(176,90,59,.3)"></span>
+      <span style="flex:none">24.03.27</span>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<sc-if value="{{ i.isHola }}">
+<div style="position:absolute;inset:0;display:flex;flex-direction:column;animation:fu .5s ease both">
+  <div style="padding:clamp(26px,5vh,38px) 36px 0;display:flex;justify-content:space-between;align-items:baseline;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#3B2A20">
+    <img src="assets/ce-logo-v4.png" alt="C&amp;E" style="flex:none;height:27px;width:auto;display:block;align-self:center;opacity:.88" />
+    <span style="display:flex;align-items:center;gap:13px;flex:none"><span onClick="{{ i.setEs }}" style="cursor:pointer;opacity:{{ i.opEs }}">ES</span><span onClick="{{ i.setCa }}" style="cursor:pointer;opacity:{{ i.opCa }}">CA</span></span>
+  </div>
+  <div style="flex:1;min-height:0;display:flex;flex-direction:column;justify-content:space-between;gap:clamp(14px,3.4vh,30px);padding:clamp(22px,4.4vh,36px) 36px clamp(28px,5.6vh,46px)">
+    <div style="font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:clamp(34px,7.2vh,52px);line-height:1.06;letter-spacing:-.01em;color:#B05A3B;flex:none">{{ i.greet }}</div>
+    <div style="display:flex;flex-direction:column;gap:clamp(8px,1.7vh,15px);max-width:34em;flex:none">
+      <sc-for list="{{ i.holaParas }}" as="p" hint-placeholder-count="3">
+        <div style="font-size:clamp(12.2px,2.62vh,15px);font-weight:400;line-height:1.68;color:#3B2A20;text-wrap:pretty">{{ p }}</div>
+      </sc-for>
+    </div>
+    <div onClick="{{ i.closeHola }}" style="flex:none;position:relative;z-index:9;cursor:pointer;border:.5px solid rgba(176,90,59,.5);background:transparent;color:#B05A3B;text-align:center;padding:clamp(13px,2.9vh,17px);font-size:11px;letter-spacing:.18em;text-transform:uppercase;transition:border-color .45s ease,letter-spacing .45s ease,background .35s ease,color .35s ease" style-hover="border-color:#B05A3B;letter-spacing:.28em" style-active="background:#B05A3B;border-color:#B05A3B;color:#F5E8D2">{{ i.t.hola.next }}</div>
+  </div>
+</div>
+</sc-if>
+
+<sc-if value="{{ i.isBoda }}">
+<div style="position:absolute;inset:0;display:flex;flex-direction:column;animation:fu .5s ease both">
+  <div style="padding:38px 36px 0;display:flex;justify-content:space-between;align-items:baseline;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#3B2A20">
+    <span onClick="{{ i.toHub }}" style="cursor:pointer;flex:none;white-space:nowrap">&larr; {{ i.t.back }}</span><span style="flex:none">01</span>
+  </div>
+  <div style="flex:1;overflow-y:auto;scrollbar-width:none;padding:20px 36px 80px">
+    <div style="font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:52px;line-height:1.05;letter-spacing:-.01em;color:#B05A3B;margin-top:26px">{{ i.t.boda.title }}</div>
+    <div style="font-family:'Archivo Narrow',sans-serif;font-size:15px;font-weight:400;line-height:1.9;color:#3B2A20;margin-top:20px;text-wrap:pretty">{{ i.t.boda.intro }}</div>
+
+    <div style="margin-top:56px;font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:25px;line-height:1.1;color:#B05A3B">{{ i.t.boda.scheduleLabel }}</div>
+    <div style="margin-top:20px;display:flex;flex-direction:column">
+      <sc-for list="{{ i.t.boda.rows }}" as="row" hint-placeholder-count="4">
+        <div style="display:flex;justify-content:space-between;gap:24px;align-items:baseline;padding:19px 18px;border-top:.5px solid rgba(176,90,59,.16)">
+          <span style="flex:none;font-family:'Archivo Narrow',sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#C4866A">{{ row.k }}</span>
+          <span style="flex:none;text-align:right">
+            <span style="display:block;font-family:'Archivo Narrow',sans-serif;font-weight:400;font-size:15px;line-height:1.8;color:#3B2A20">{{ row.v }}</span>
+            <sc-if value="{{ row.note }}"><span style="display:block;font-family:'Archivo Narrow',sans-serif;font-size:12px;font-weight:400;line-height:1.5;color:#C4866A;margin-top:4px">{{ row.note }}</span></sc-if>
+          </span>
+        </div>
+      </sc-for>
+    </div>
+
+    <div style="margin-top:56px;font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:25px;line-height:1.1;color:#B05A3B">{{ i.t.boda.placeLabel }}</div>
+    <div style="margin-top:20px;padding:19px 0 0;border-top:.5px solid rgba(176,90,59,.16)">
+      <div style="font-family:'Archivo Narrow',sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#C4866A;white-space:nowrap">{{ i.t.boda.place }}</div>
+      <div style="font-family:'Archivo Narrow',sans-serif;font-size:12px;font-weight:400;line-height:1.5;color:#3B2A20;margin-top:6px;text-wrap:pretty">{{ i.t.boda.address }}</div>
+    </div>
+    <div style="margin:26px -36px 0">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.6481376566308!2d2.1971102755486287!3d41.66334377883353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4c3e7c711f469%3A0x653a613cf6101fac!2sCan%20Ribas%20de%20Montbui!5e0!3m2!1ses!2ses!4v1787338043582!5m2!1ses!2ses" title="Can Ribas de Montbui" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" style="display:block;width:100%;height:240px;border:0;filter:saturate(.6) sepia(.15) contrast(.94) brightness(1.04);opacity:.92"></iframe>
+    </div>
+    <a href="https://www.google.com/maps/search/?api=1&amp;query=Cam%C3%AD%20de%20Can%20Ribas%2C%2008415%20Bigues%20i%20Riells" target="_blank" rel="noopener" style="display:flex;justify-content:space-between;align-items:center;margin-top:20px;text-decoration:none;color:#C4866A;font-size:12px;letter-spacing:.18em;text-transform:uppercase;transition:letter-spacing .5s ease" style-hover="letter-spacing:.38em">
+      <span style="flex:none">{{ i.t.boda.mapCta }}</span><span style="flex:none">&nearr;</span>
+    </a>
+
+    <div style="margin-top:56px;font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:25px;line-height:1.1;color:#B05A3B">{{ i.t.boda.travelLabel }}</div>
+    <div style="margin-top:20px;display:flex;flex-direction:column">
+      <sc-for list="{{ i.t.boda.travelRows }}" as="row" hint-placeholder-count="2">
+        <div style="display:flex;gap:24px;align-items:baseline;padding:19px 0;border-top:.5px solid rgba(176,90,59,.16)">
+          <span style="flex:none;width:78px;font-family:'Archivo Narrow',sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#C4866A">{{ row.k }}</span>
+          <span style="flex:1;font-family:'Archivo Narrow',sans-serif;font-size:15px;font-weight:400;line-height:1.8;color:#3B2A20;text-wrap:pretty">{{ row.v }}</span>
+        </div>
+      </sc-for>
+    </div>
+
+    <div style="margin-top:56px;font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:25px;line-height:1.1;color:#B05A3B">{{ i.t.boda.dressLabel }}</div>
+    <div style="font-family:'Archivo Narrow',sans-serif;font-size:15px;font-weight:400;line-height:1.8;color:#3B2A20;margin-top:20px;padding-top:19px;border-top:.5px solid rgba(176,90,59,.16)">{{ i.t.boda.dress }}</div>
+  </div>
+</div>
+</sc-if>
+
+<sc-if value="{{ i.isList }}">
+<div style="position:absolute;inset:0;display:flex;flex-direction:column;animation:fu .5s ease both">
+  <div style="padding:38px 36px 0;display:flex;justify-content:space-between;align-items:baseline;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#3B2A20">
+    <span onClick="{{ i.toHub }}" style="cursor:pointer;flex:none;white-space:nowrap">&larr; {{ i.t.back }}</span>
+    <span style="display:flex;align-items:center;gap:13px;flex:none"><span onClick="{{ i.setEs }}" style="cursor:pointer;opacity:{{ i.opEs }}">ES</span><span onClick="{{ i.setCa }}" style="cursor:pointer;opacity:{{ i.opCa }}">CA</span></span>
+  </div>
+  <div style="flex:1;overflow-y:auto;scrollbar-width:none;padding:20px 36px 80px">
+    <div style="font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:44px;line-height:1.05;letter-spacing:-.01em;color:#B05A3B;margin-top:26px;overflow-wrap:break-word">{{ i.pg.title }}</div>
+    <div style="font-family:'Archivo Narrow',sans-serif;font-size:15px;font-weight:400;line-height:1.9;color:#3B2A20;margin-top:20px;text-wrap:pretty">{{ i.pg.intro }}</div>
+    <div style="margin-top:26px;background:rgba(176,90,59,.07);padding:18px 20px">
+      <div style="font-family:'Archivo Narrow',sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#C4866A">{{ i.pg.warnLabel }}</div>
+      <div style="font-family:'Archivo Narrow',sans-serif;font-size:12px;font-weight:400;line-height:1.5;color:#3B2A20;margin-top:6px;text-wrap:pretty">{{ i.pg.warn }}</div>
+    </div>
+    <sc-for list="{{ i.pg.sections }}" as="sec" hint-placeholder-count="3">
+      <div style="margin-top:56px">
+        <div style="font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:25px;line-height:1.1;color:#B05A3B">{{ sec.t }}</div>
+        <div style="font-family:'Archivo Narrow',sans-serif;font-size:12px;font-weight:400;line-height:1.6;color:#C4866A;margin-top:8px;text-wrap:pretty">{{ sec.s }}</div>
+        <div style="display:flex;flex-direction:column;margin-top:20px">
+          <sc-for list="{{ sec.links }}" as="ln" hint-placeholder-count="0">
+            <div style="padding:19px 0;border-top:.5px solid rgba(176,90,59,.16)">
+              <span style="display:block;font-family:'Archivo Narrow',sans-serif;font-size:15px;font-weight:400;line-height:1.5;color:#3B2A20">{{ ln.t }}</span>
+              <sc-if value="{{ ln.s }}"><span style="display:block;font-family:'Archivo Narrow',sans-serif;font-size:12px;font-weight:400;line-height:1.5;color:#C4866A;margin-top:5px">{{ ln.s }}</span></sc-if>
+            </div>
+          </sc-for>
+        </div>
+        <sc-for list="{{ sec.groups }}" as="grp" hint-placeholder-count="0">
+          <div style="margin-top:34px">
+            <div style="font-family:'Archivo Narrow',sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#C4866A">{{ grp.label }}</div>
+            <sc-if value="{{ grp.note }}"><div style="font-family:'Archivo Narrow',sans-serif;font-size:12px;font-weight:400;line-height:1.5;color:#C4866A;margin-top:6px">{{ grp.note }}</div></sc-if>
+            <div style="display:flex;flex-direction:column;margin-top:14px">
+              <sc-for list="{{ grp.links }}" as="ln" hint-placeholder-count="0">
+                <div style="padding:19px 0;border-top:.5px solid rgba(176,90,59,.16)">
+                  <span style="display:block;font-family:'Archivo Narrow',sans-serif;font-size:15px;font-weight:400;line-height:1.5;color:#3B2A20">{{ ln.t }}</span>
+                  <sc-if value="{{ ln.s }}"><span style="display:block;font-family:'Archivo Narrow',sans-serif;font-size:12px;font-weight:400;line-height:1.5;color:#C4866A;margin-top:5px">{{ ln.s }}</span></sc-if>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </sc-for>
+    <sc-if value="{{ i.pg.note }}"><div style="margin-top:56px;padding-top:19px;border-top:.5px solid rgba(176,90,59,.16);font-family:'Archivo Narrow',sans-serif;font-size:15px;font-weight:400;line-height:1.8;color:#3B2A20">{{ i.pg.note }}</div></sc-if>
+  </div>
+</div>
+</sc-if>
+
+<sc-if value="{{ i.isGarden }}">
+<div style="position:absolute;inset:0;display:flex;flex-direction:column;animation:fu .5s ease both">
+  <div style="padding:38px 36px 0;display:flex;justify-content:space-between;align-items:baseline;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#3B2A20">
+    <span onClick="{{ i.toHub }}" style="cursor:pointer;flex:none;white-space:nowrap">&larr; {{ i.t.back }}</span><span style="flex:none">05</span>
+  </div>
+  <div style="flex:1;overflow-y:auto;padding:28px 36px 76px">
+    <div style="display:flex;gap:18px;align-items:flex-end;margin:-28px -36px 0;padding:28px 36px 20px;border-bottom:.5px solid rgba(176,90,59,.16)">
+      <span style="flex:1;font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:58px;line-height:1.1;letter-spacing:-.005em;color:#B05A3B">{{ i.t.garden.title }}</span>
+    </div>
+    <div style="font-family:'Instrument Serif',serif;font-style:italic;font-size:22px;line-height:1.5;margin-top:22px;color:#C4866A">{{ i.t.garden.lead }}</div>
+    <div style="font-size:14px;font-weight:400;line-height:1.95;color:#C4866A;margin-top:18px;text-wrap:pretty">{{ i.gardenP1 }}</div>
+    <div style="font-family:'Instrument Serif',serif;font-style:italic;font-size:22px;line-height:1.5;margin-top:22px;color:#C4866A">{{ i.t.garden.lead2 }}</div>
+    <div style="font-size:14px;font-weight:400;line-height:1.95;color:#C4866A;margin-top:18px;text-wrap:pretty">{{ i.gardenP2 }}</div>
+    <div style="margin-top:34px">
+      <sc-for list="{{ i.t.garden.ways }}" as="w" hint-placeholder-count="3">
+        <div style="display:block;padding:20px 0;border-top:.5px solid rgba(176,90,59,.18)">
+          <span style="display:block;font-family:'Archivo Narrow',sans-serif;font-weight:600;font-size:16px;line-height:1.45;letter-spacing:.05em;text-transform:uppercase;color:#B05A3B">{{ w.title }}</span>
+          <sc-for list="{{ w.rows }}" as="row" hint-placeholder-count="1">
+            <span style="display:flex;justify-content:space-between;gap:12px;padding:9px 0">
+              <span style="flex:none;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#3B2A20">{{ row.k }}</span>
+              <span style="flex:1;font-family:'Archivo Narrow',sans-serif;font-size:14px;text-align:right;color:#B05A3B;word-break:break-word">{{ row.v }}</span>
+            </span>
+          </sc-for>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<sc-if value="{{ i.isRsvp }}">
+<div style="position:absolute;inset:0;display:flex;flex-direction:column;animation:fu .5s ease both">
+  <div style="padding:38px 36px 0;display:flex;justify-content:space-between;align-items:baseline;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#3B2A20">
+    <span onClick="{{ i.toHub }}" style="cursor:pointer;flex:none;white-space:nowrap">&larr; {{ i.t.back }}</span><span style="flex:none">02</span>
+  </div>
+  <div style="flex:1;overflow-y:auto;padding:28px 36px 76px">
+    <div style="display:flex;gap:18px;align-items:flex-end;margin:-28px -36px 0;padding:28px 36px 20px;border-bottom:.5px solid rgba(176,90,59,.16)">
+      <span style="flex:1;font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:58px;line-height:1.1;letter-spacing:-.005em;color:#B05A3B">{{ i.t.rsvp.title }}</span>
+    </div>
+    <div style="font-family:'Archivo Narrow',sans-serif;font-size:14px;font-weight:400;line-height:1.95;color:#B05A3B;margin-top:22px">{{ i.t.rsvp.intro }}</div>
+    <div style="margin-top:30px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#3B2A20">{{ i.t.rsvp.qGo }}</div>
+    <div style="display:flex;gap:9px;margin-top:12px">
+      <div onClick="{{ i.setGoingYes }}" style="flex:1;position:relative;z-index:9;text-align:center;cursor:pointer;border:{{ i.hBorderYes }};background:{{ i.hBgYes }};color:{{ i.hFgYes }};padding:15px;font-family:'Archivo Narrow',sans-serif;font-size:14px;font-weight:{{ i.hWtYes }};transition:border-color .45s ease,letter-spacing .45s ease" style-hover="border-color:#B05A3B;letter-spacing:.1em">{{ i.t.rsvp.yes }}</div>
+      <div onClick="{{ i.setGoingNo }}" style="flex:1;position:relative;z-index:9;text-align:center;cursor:pointer;border:{{ i.hBorderNo }};background:{{ i.hBgNo }};color:{{ i.hFgNo }};padding:15px;font-family:'Archivo Narrow',sans-serif;font-size:14px;font-weight:{{ i.hWtNo }};transition:border-color .45s ease,letter-spacing .45s ease" style-hover="border-color:#B05A3B;letter-spacing:.1em">{{ i.t.rsvp.no }}</div>
+    </div>
+    <div style="margin-top:28px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#3B2A20">{{ i.t.rsvp.qBus }}</div>
+    <div style="display:flex;gap:9px;margin-top:12px">
+      <div onClick="{{ i.setBusYes }}" style="flex:1;position:relative;z-index:9;cursor:pointer;border:{{ i.hBorderBusYes }};background:{{ i.hBgBusYes }};color:{{ i.hFgBusYes }};padding:15px;font-size:14px;font-weight:{{ i.hWtBusYes }};text-align:center;transition:border-color .45s ease,letter-spacing .45s ease" style-hover="border-color:#B05A3B;letter-spacing:.1em">{{ i.t.rsvp.busYes }}</div>
+      <div onClick="{{ i.setBusNo }}" style="flex:1;position:relative;z-index:9;cursor:pointer;border:{{ i.hBorderBusNo }};background:{{ i.hBgBusNo }};color:{{ i.hFgBusNo }};padding:15px;font-size:14px;font-weight:{{ i.hWtBusNo }};text-align:center;transition:border-color .45s ease,letter-spacing .45s ease" style-hover="border-color:#B05A3B;letter-spacing:.1em">{{ i.t.rsvp.busNo }}</div>
+    </div>
+    <div style="margin-top:28px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#3B2A20">{{ i.t.rsvp.qTrip }}</div>
+    <div style="display:flex;gap:9px;margin-top:12px">
+      <div onClick="{{ i.setTripYes }}" style="flex:1;position:relative;z-index:9;cursor:pointer;border:{{ i.hBorderTripYes }};background:{{ i.hBgTripYes }};color:{{ i.hFgTripYes }};padding:15px;font-size:14px;font-weight:{{ i.hWtTripYes }};text-align:center;transition:border-color .45s ease,letter-spacing .45s ease" style-hover="border-color:#B05A3B;letter-spacing:.1em">{{ i.t.rsvp.tripSi }}</div>
+      <div onClick="{{ i.setTripNo }}" style="flex:1;position:relative;z-index:9;cursor:pointer;border:{{ i.hBorderTripNo }};background:{{ i.hBgTripNo }};color:{{ i.hFgTripNo }};padding:15px;font-size:14px;font-weight:{{ i.hWtTripNo }};text-align:center;transition:border-color .45s ease,letter-spacing .45s ease" style-hover="border-color:#B05A3B;letter-spacing:.1em">{{ i.t.rsvp.tripNo }}</div>
+    </div>
+    <sc-if value="{{ i.showTripDates }}">
+    <div style="margin-top:16px;border-left:.5px solid rgba(176,90,59,.3);padding-left:15px;animation:fu .4s ease both">
+      <div style="display:flex;gap:16px">
+        <label style="flex:1;display:block">
+          <span style="display:block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#3B2A20">{{ i.t.rsvp.tripIn }}</span>
+          <input type="date" value="{{ i.tripInVal }}" onChange="{{ i.setTripIn }}" style="width:100%;box-sizing:border-box;border:0;border-bottom:.5px solid rgba(176,90,59,.28);background:transparent;padding:8px 0;margin-top:5px;font-family:'Archivo Narrow',sans-serif;font-size:15px;color:#B05A3B">
+        </label>
+        <label style="flex:1;display:block">
+          <span style="display:block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#3B2A20">{{ i.t.rsvp.tripOut }}</span>
+          <input type="date" value="{{ i.tripOutVal }}" onChange="{{ i.setTripOut }}" style="width:100%;box-sizing:border-box;border:0;border-bottom:.5px solid rgba(176,90,59,.28);background:transparent;padding:8px 0;margin-top:5px;font-family:'Archivo Narrow',sans-serif;font-size:15px;color:#B05A3B">
+        </label>
+      </div>
+      <div style="margin-top:10px;font-family:'Archivo Narrow',sans-serif;font-size:12px;font-weight:400;line-height:1.7;color:#C4866A">{{ i.t.rsvp.tripHint }}</div>
+    </div>
+    </sc-if>
+    <div style="margin-top:28px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#3B2A20">{{ i.t.rsvp.qDiet }}</div>
+    <input data-soft="1" value="{{ i.dietVal }}" onChange="{{ i.setDiet }}" placeholder="{{ i.t.rsvp.dietPh }}" style="width:100%;box-sizing:border-box;border:0;border-bottom:.5px solid rgba(176,90,59,.28);background:transparent;padding:10px 0;margin-top:9px;font-family:'Archivo Narrow',sans-serif;font-size:14px">
+    <div style="margin-top:28px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#3B2A20">{{ i.t.rsvp.qNote }}</div>
+    <input data-soft="1" value="{{ i.noteVal }}" onChange="{{ i.setNote }}" placeholder="{{ i.t.rsvp.notePh }}" style="width:100%;box-sizing:border-box;border:0;border-bottom:.5px solid rgba(176,90,59,.28);background:transparent;padding:10px 0;margin-top:9px;font-family:'Archivo Narrow',sans-serif;font-size:14px">
+    <div onClick="{{ i.send }}" style="margin-top:32px;position:relative;z-index:9;cursor:pointer;border:.5px solid rgba(176,90,59,.5);color:#B05A3B;text-align:center;padding:17px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;transition:border-color .45s ease,letter-spacing .45s ease" style-hover="border-color:#B05A3B;letter-spacing:.28em">{{ i.t.rsvp.send }}</div>
+  </div>
+</div>
+</sc-if>
+
+<sc-if value="{{ i.isThanks }}">
+<div style="position:absolute;inset:0;display:flex;flex-direction:column;animation:fu .5s ease both">
+  <div style="padding:38px 36px 0;display:flex;justify-content:space-between;align-items:baseline;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#3B2A20">
+    <span onClick="{{ i.toHub }}" style="cursor:pointer;flex:none;white-space:nowrap">&larr; {{ i.t.back }}</span><span style="flex:none">24.03.27</span>
+  </div>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:0 36px;gap:20px">
+    <div style="width:.5px;height:52px;background:#3B2A20;opacity:.6"></div>
+    <div style="font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:52px;line-height:1.2;letter-spacing:-.005em;color:#B05A3B">{{ i.thanksTitle }}</div>
+    <div style="font-size:14px;font-weight:400;line-height:1.95;color:#C4866A;max-width:268px">{{ i.thanksBody }}</div>
+  </div>
+  <div style="padding:0 36px 46px">
+    <div onClick="{{ i.resend }}" style="position:relative;z-index:9;cursor:pointer;border:.5px solid rgba(176,90,59,.3);text-align:center;padding:16px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;transition:border-color .45s ease,letter-spacing .45s ease" style-hover="border-color:#B05A3B;letter-spacing:.28em">{{ i.t.rsvp.again }}</div>
+  </div>
+</div>
+</sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = {
+    i: { screen: 'login', lang: 'es', n: '', s: '', err: '' }
+  };
+
+  norm(v) {
+    return (v || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/\s+/g, ' ').trim();
+  }
+
+  findGuest(n, s) {
+    const list = (typeof window !== 'undefined' && window.INVITADOS) || [];
+    const a = this.norm(n), b = this.norm(s);
+    const full = (a + ' ' + b).trim();
+    return list.find(g => {
+      const gn = this.norm(g.nombre), gs = this.norm(g.apellido);
+      return (gn === a && gs === b) || this.norm(g.nombre + ' ' + g.apellido) === full;
+    }) || null;
+  }
+
+  copy = {
+    es: {
+      amp: 'y',
+      kicker: 'Nos casamos',
+      invite: 'Celebramos nuestra boda y te invitamos\na formar parte de este día',
+      date: '24 · MARZO · 2027',
+      dateLong: '24 DE MARZO DE 2027',
+      monthLine: 'MARZO\n2027',
+      hint: 'Ingresá tu nombre tal como figura en la invitación.',
+      first: 'Nombre', last: 'Apellido', enter: 'ENTRAR',
+      errEmpty: 'Che, faltan datos: nombre y apellido.',
+      errNotFound: 'No te encontramos en la lista. Probá con tu nombre y apellido tal como te invitamos, o escribinos.',
+      welcome: 'Qué lindo que estés acá',
+      hola: {
+        kicker: 'Antes de entrar',
+        body: 'Nos casamos. Sí, por amor. Y porque después de todo este tiempo seguimos pensando que es una buena idea.\n\nEs por eso que queríamos celebrarlo teniendo cerca, por un día, a todas esas personas que queremos: las que están a media hora y las que están a un océano de distancia.\n\nSi estás leyendo esto, sos una de ellas. De las que hacen que celebrar tenga sentido.\n\nPrometemos poca ceremonia y mucha mesa: comer bien, brindar más de lo razonable y bailar con bastante menos criterio del que sería recomendable.\n\nGracias por estar. Nos vemos el 24.',
+        next: 'Quiero saber más'
+      },
+      foot: 'Mitad argentina, mitad catalana',
+      items: [
+        { n: '01', key: 'boda', title: 'La boda', sub: 'Fecha, lugar, cómo llegar y el micro' },
+        { n: '02', key: 'rsvp', title: 'Confirmá tu asistencia', sub: 'Traslado, fechas y dieta' },
+        { n: '03', key: 'dormir', title: 'Dónde dormir', sub: 'Hoteles cerca, Barcelona y Penedès' },
+        { n: '04', key: 'reco', title: 'Recomendaciones', sub: 'Barcelona sin turismo de masas' },
+        { n: '05', key: 'garden', title: 'Garden Moon', sub: 'En vez de viaje, el jardín de nuestra casa' }
+      ],
+      back: 'Volver',
+      boda: {
+        title: 'La boda',
+        intro: 'Amor, vino, baile, etc. A 45 minutos de Barcelona',
+        rows: [
+          { k: 'Ceremonia', v: '12:00', note: 'hora aproximada' },
+          { k: 'Aperitivo', v: '13:00', note: 'hora aproximada' },
+          { k: 'Comida', v: '15:00', note: 'hora aproximada' },
+          { k: 'Fiesta', v: '18:00', note: 'hasta que el cuerpo aguante' }
+        ],
+        scheduleLabel: 'El día',
+        placeLabel: 'El lugar',
+        place: 'Can Ribas de Montbui',
+        address: 'Camí de Can Ribas, s/n\n08415 Bigues i Riells, Barcelona',
+        mapCta: 'Abrir en Google Maps',
+        travelLabel: 'Cómo llegar',
+        travelRows: [
+          { k: 'En coche', v: 'No te preocupes, hay estacionamiento' },
+          { k: 'En micro', v: 'Ida y vuelta desde el centro. Lo pedís al confirmar tu asistencia' }
+        ],
+        dressLabel: 'Cómo vestirse',
+        dress: 'Elegante.'
+      },
+      dormir: {
+        title: 'Dónde dormir',
+        intro: 'Si te da fiaquita movilizarte después de la fiesta, o si necesitas recomendaciones en la ciudad',
+        sections: [
+          {
+            n: '01', t: 'A 10 minutos', s: 'Casas rurales cerca de la boda. Lo más práctico si no querés depender del micro.',
+            links: [
+              { t: 'Hotel Molí de la Torre', s: 'Camí de la Torre, s/n · Bigues i Riells', url: 'https://molidelatorre.com/' },
+              { t: 'Casas rurales', s: 'Variedad en los alrededores' }
+            ]
+          },
+          {
+            n: '02', t: 'Barcelona', s: 'Si venís de lejos y querés hacer días en la ciudad. El micro te lleva y te trae a la boda.',
+            links: [
+              { t: 'Room Casa Gracia', s: 'Gràcia', url: 'https://room00hostel.com/barcelona/casa-gracia-hostel/' },
+              { t: 'B Hotel Barcelona', s: 'Plaça Espanya', url: 'https://www.b-hotel.com/' },
+              { t: 'Airbnb', s: 'Plaza España, Eixample o Sants' }
+            ]
+          },
+          {
+            n: '03', t: 'El Penedès', s: 'Si ya conocés Barcelona, quedate cerca de nuestra casa: bodegas, Montserrat a un rato y planes juntos el fin de semana.',
+            links: [
+              { t: 'Hotel Dolce Barcelona', s: 'Sant Esteve Sesrovires', url: 'https://hoteldolcebarcelona.com/' }
+            ]
+          }
+        ],
+        warnLabel: 'Antes de nada',
+        warn: 'Del 25 al 29 de marzo es Semana Santa: todo se llena y sube de precio. No lo dejes para después.',
+        note: ''
+      },
+      reco: {
+        title: 'Recomendaciones',
+        intro: 'Si te quedás unos días, esto es lo que le decimos a los que nos visitan. Nada de listas de top 10.',
+        sections: [
+          {
+            n: '01', t: 'Comer', s: 'Vermut al mediodía, bodegas de barrio y una sobremesa larga.',
+            links: [
+              { t: 'Vermut i a la Gàbia', s: 'Unas tapitas y terraza' },
+              { t: 'Bar Ibèrics Eixample', s: 'Cervecita y jamón increíble, al mejor precio' },
+              { t: 'Ciutat Comtal', s: 'Un clásico' },
+              { t: 'La Viblioteca', s: 'Vinos y quesos · reservá antes' },
+              { t: 'franca', s: 'Cocina tradicional inventada · reservá antes' }
+            ]
+          },
+          {
+            n: '02', t: 'Ver', s: 'Un par de cosas y bien, en vez de seis y corriendo.',
+            links: [
+              { t: 'Las Arenas', s: 'Subir al último piso de las Arenas y disfrutar de las vistas panorámicas de Montjuïc' },
+              { t: 'Palau de la Música', s: 'Modernismo por dentro: vale la pena entrar, aunque sea a la visita corta' },
+              { t: 'Casa Vicens', s: 'La primera casa de Gaudí, en Gràcia. Pequeña y mucho menos concurrida' }
+            ]
+          },
+          {
+            n: '03', t: 'Caminar', s: 'Vistas, cuestas y una parada a mitad de camino.',
+            links: [
+              { t: 'De Plaça Espanya al centro', s: 'Caminar desde plaza España hasta el centro (o al revés) por Consell de Cent y tomarse un helado en Flor o un vermut en Morro Fi' },
+              { t: 'A los pies del Tibidabo', s: 'Subir hasta los pies del Tibidabo y tomarse algo en El Balconet o Mirablau, con vistas espectaculares de Barcelona. Recomendable ir al atardecer' },
+              { t: 'Carretera de les Aigües', s: 'Camino llano en la sierra, con Barcelona entera a tus pies. Ideal al atardecer' }
+            ]
+          },
+          {
+            n: '04', t: 'Escapadas', s: 'Para pasar el día o escaparte una o dos noches',
+            links: [
+              { t: 'Montserrat', s: 'La montaña serrada a una hora en tren. Monasterio, senderos y vistas' },
+              { t: 'Sitges', s: 'Para comer, sí o sí arroz en La Zorra' },
+              { t: 'Tossa de Mar', s: 'Imprescindible pasar por L\'Espai' },
+              { t: 'Cadaqués', s: 'Pueblo blanco del Cap de Creus. Casa de Dalí en Portlligat y calas de agua clara' }
+            ]
+          }
+        ],
+        warnLabel: 'Antes de nada',
+        warn: 'Del 25 al 29 de marzo es Semana Santa: chequeá bien horarios y disponibilidad, muchos lugares cierran.'
+      },
+      garden: {
+        title: 'Garden Moon',
+        lead: 'Hemos decidido no irnos de luna de miel',
+        lead2: 'Bienvenidos a nuestra Garden Moon.',
+        body: 'Nos parece mucho más sensato invertirlo en el jardín de nuestra nueva casa: unas plantas, algún árbol, un poco de césped, una parrilla argentina, una pérgola… nada, cosas básicas.\n\nNo hace falta regalo. Pero si quieren contribuir, prometemos acordarnos de ustedes cada vez que lo reguemos.',
+        ways: [
+          { title: 'Desde España', rows: [
+            { k: 'IBAN', v: 'ES72 2100 0768 1302 0037 0683' }
+          ] },
+          { title: 'Desde Argentina', rows: [
+            { k: 'Alias MP pesos/dólares', v: 'clarayedgar' }
+          ] },
+          { title: 'El que nunca pasa de moda', rows: [
+            { k: 'Sobrecito con efectivo', v: '' }
+          ] }
+        ],
+      },
+      rsvp: {
+        title: 'Confirmá tu asistencia',
+        intro: 'Necesitamos tu respuesta antes del 24 de diciembre del 2026.',
+        qGo: '¿Venís?',
+        yes: 'Obvio',
+        no: 'No puedo ir',
+        qBus: '¿Necesitás micro desde Barcelona?',
+        busYes: 'Sí, ida y vuelta',
+        busNo: 'No, voy por mi cuenta',
+        qTrip: '¿Viajás desde Argentina?',
+        tripSi: 'Sí',
+        tripNo: 'No, vivo acá',
+        tripIn: 'Llego a Barcelona',
+        tripOut: 'Me vuelvo',
+        tripHint: 'Teniendo las fechas podemos armar algún plancito para esos días',
+        night: 'noche en Barcelona',
+        nights: 'noches en Barcelona',
+        qDiet: 'Alergias o dieta',
+        dietPh: 'Vegetariano, sin gluten, alergias…',
+        qNote: 'Algo que quieras decirnos',
+        notePh: 'Una canción que no puede faltar, por ejemplo',
+        send: 'Enviar',
+        thanksTitle: 'Anotado',
+        thanksBody: 'Gracias por confirmar. Te vamos a escribir unos días antes con los detalles que faltan',
+        thanksTitleNo: 'Anotado',
+        thanksBodyNo: 'Oh, qué mal :(. ¡Te vamos a extrañar!',
+        again: 'Cambiar mi respuesta'
+      }
+    },
+    ca: {
+      amp: 'i',
+      kicker: 'Ens casem',
+      invite: 'Celebrem el nostre casament i t\u2019convidem\na formar part d\u2019aquest dia',
+      date: '24 · MARÇ · 2027',
+      dateLong: '24 DE MARÇ DE 2027',
+      monthLine: 'MARÇ\n2027',
+      hint: 'Escriu el teu nom tal com surt a la invitació.',
+      first: 'Nom', last: 'Cognom', enter: 'ENTRAR',
+      errEmpty: 'Ei, falten dades: nom i cognom.',
+      errNotFound: 'No et trobem a la llista. Prova amb el nom i el cognom tal com et vam convidar, o escriu-nos.',
+      welcome: 'Que bo que hi siguis',
+      hola: {
+        kicker: 'Abans d\'entrar',
+        body: 'Ens casem. Sí, per amor. I perquè després de tot aquest temps encara pensem que és una bona idea.\n\nVolíem celebrar-ho tenint a prop, per un dia, totes aquelles persones que estimem: les que són a mitja hora i les que són a un oceà de distància.\n\nSi estàs llegint això, ets una d\'elles. De les que fan que celebrar-ho tingui sentit.\n\nPrometem poca cerimònia i molta taula: menjar bé, brindar més del compte i ballar amb bastant menys criteri del que seria recomanable.\n\nGràcies per ser-hi. Ens veiem el 24.',
+        next: 'Vull saber-ne més'
+      },
+      foot: 'Meitat argentina, meitat catalana',
+      items: [
+        { n: '01', key: 'boda', title: 'El casament', sub: 'Data, lloc, com arribar-hi i el bus' },
+        { n: '02', key: 'rsvp', title: 'Confirma assistència', sub: 'Trasllat, dates i dieta' },
+        { n: '03', key: 'dormir', title: 'On dormir', sub: 'Hotels a prop, Barcelona i Penedès' },
+        { n: '04', key: 'reco', title: 'Recomanacions', sub: 'Barcelona sense turisme de masses' },
+        { n: '05', key: 'garden', title: 'Garden Moon', sub: 'En lloc de viatge, el jardí de casa' }
+      ],
+      back: 'Tornar',
+      boda: {
+        title: 'El casament',
+        intro: 'Amor, vi, ball, etc. A 45 minuts de Barcelona',
+        rows: [
+          { k: 'Cerimònia', v: '12:00', note: 'hora aproximada' },
+          { k: 'Aperitiu', v: '13:00', note: 'hora aproximada' },
+          { k: 'Dinar', v: '15:00', note: 'hora aproximada' },
+          { k: 'Festa', v: '18:00', note: 'fins que el cos aguanti' }
+        ],
+        scheduleLabel: 'El dia',
+        placeLabel: 'El lloc',
+        place: 'Can Ribas de Montbui',
+        address: 'Camí de Can Ribas, s/n\n08415 Bigues i Riells, Barcelona',
+        mapCta: 'Obrir a Google Maps',
+        travelLabel: 'Com arribar-hi',
+        travelRows: [
+          { k: 'En cotxe', v: 'No et preocupis, hi ha aparcament' },
+          { k: 'En bus', v: 'Anada i tornada des del centre. El demanes en confirmar la teva assistència' }
+        ],
+        dressLabel: 'Com vestir-se',
+        dress: 'Elegant.'
+      },
+      dormir: {
+        title: 'On dormir',
+        intro: 'Si et fa mandra moure\'t després de la festa, o si necessites recomanacions a la ciutat,',
+        sections: [
+          {
+            n: '01', t: 'A 10 minuts', s: 'Cases rurals a prop del casament. El més pràctic si no vols dependre del bus.',
+            links: [
+              { t: 'Hotel Molí de la Torre', s: 'Camí de la Torre, s/n · Bigues i Riells', url: 'https://molidelatorre.com/' },
+              { t: 'Cases rurals', s: 'Varietat pels voltants' }
+            ]
+          },
+          {
+            n: '02', t: 'Barcelona', s: 'Si véns de lluny i vols fer dies a la ciutat. El bus et porta i et torna del casament.',
+            links: [
+              { t: 'Room Casa Gracia', s: 'Gràcia', url: 'https://room00hostel.com/barcelona/casa-gracia-hostel/' },
+              { t: 'B Hotel Barcelona', s: 'Plaça Espanya', url: 'https://www.b-hotel.com/' },
+              { t: 'Airbnb', s: 'Plaça Espanya, Eixample o Sants' }
+            ]
+          },
+          {
+            n: '03', t: 'El Penedès', s: 'Si ja coneixes Barcelona, queda\'t a prop de casa nostra: bodegues, Montserrat a una estona i plans junts el cap de setmana.',
+            links: [
+              { t: 'Hotel Dolce Barcelona', s: 'Sant Esteve Sesrovires', url: 'https://hoteldolcebarcelona.com/' }
+            ]
+          }
+        ],
+        warnLabel: 'Abans de res',
+        warn: 'Del 25 al 29 de març és Setmana Santa: tot s\'omple i puja de preu. No ho deixis per després.',
+        note: ''
+      },
+      reco: {
+        title: 'Recomanacions',
+        intro: 'Si et quedes uns dies, això és el que diem a qui ens visita. Res de llistes de top 10.',
+        sections: [
+          {
+            n: '01', t: 'Menjar', s: 'Vermut al migdia, bodegues de barri i una sobretaula llarga.',
+            links: [
+              { t: 'Vermut i a la Gàbia', s: 'Unes tapes i terrassa' },
+              { t: 'Bar Ibèrics Eixample', s: 'Cervesa i pernil increïble, al millor preu' },
+              { t: 'Ciutat Comtal', s: 'Un clàssic' },
+              { t: 'La Viblioteca', s: 'Vins i formatges · reserva abans' },
+              { t: 'franca', s: 'Cuina tradicional inventada · reserva abans' }
+            ]
+          },
+          {
+            n: '02', t: 'Veure', s: 'Un parell de coses i bé, en lloc de sis i corrent.',
+            links: [
+              { t: 'Les Arenes', s: 'Pujar a l\'últim pis de les Arenes i gaudir de les vistes panoràmiques de Montjuïc' },
+              { t: 'Palau de la Música', s: 'Modernisme per dins: val la pena entrar-hi, encara que sigui la visita curta' },
+              { t: 'Casa Vicens', s: 'La primera casa de Gaudí, a Gràcia. Petita i molt menys concorreguda' }
+            ]
+          },
+          {
+            n: '03', t: 'Caminar', s: 'Vistes, costes i una parada a mig camí.',
+            links: [
+              { t: 'De plaça Espanya al centre', s: 'Caminar des de plaça Espanya fins al centre (o al revés) per Consell de Cent i prendre un gelat a Flor o un vermut a Morro Fi' },
+              { t: 'Als peus del Tibidabo', s: 'Pujar fins als peus del Tibidabo i prendre alguna cosa a El Balconet o Mirablau, amb vistes espectaculars de Barcelona. Recomanable anar-hi al capvespre' },
+              { t: 'Carretera de les Aigües', s: 'Camí planer a la serra, amb Barcelona als teus peus. Ideal al capvespre' }
+            ]
+          },
+          {
+            n: '04', t: 'Escapades', s: 'Per passar el dia o escapar-te una o dues nits',
+            links: [
+              { t: 'Montserrat', s: 'La muntanya serrada a una hora en tren. Monestir, camins i vistes' },
+              { t: 'Sitges', s: 'Per menjar, sí o sí arròs a La Zorra' },
+              { t: 'Tossa de Mar', s: 'Imprescindible passar per L\'Espai' },
+              { t: 'Cadaqués', s: 'Poble blanc del Cap de Creus. Casa de Dalí a Portlligat i cales d\'aigua clara' }
+            ]
+          }
+        ],
+        warnLabel: 'Abans de res',
+        warn: 'Del 25 al 29 de març és Setmana Santa: comprova bé horaris i disponibilitat, molts llocs tanquen.'
+      },
+      garden: {
+        title: 'Garden Moon',
+        lead: 'Hem decidit no anar de lluna de mel',
+        lead2: 'Benvinguts a la nostra Garden Moon.',
+        body: 'Ens sembla molt més assenyat invertir-ho en el jardí de la nostra nova casa: unes plantes, algun arbre, una mica de gespa, una graella argentina, una pèrgola… res, coses bàsiques.\n\nNo cal regal. Però si voleu contribuir-hi, prometem recordar-vos cada vegada que el reguem.',
+        ways: [
+          { title: 'Des d\'Espanya', rows: [
+            { k: 'IBAN', v: 'ES72 2100 0768 1302 0037 0683' }
+          ] },
+          { title: 'Des de l\'Argentina', rows: [
+            { k: 'Àlies MP pesos/dòlars', v: 'clarayedgar' }
+          ] },
+          { title: 'El que mai passa de moda', rows: [
+            { k: 'Sobret amb efectiu', v: '' }
+          ] }
+        ],
+      },
+      rsvp: {
+        title: 'Confirma assistència',
+        intro: 'Necessitem la teva resposta abans del 24 de desembre del 2026.',
+        qGo: 'Véns?',
+        yes: 'Clar que sí',
+        no: 'No hi puc anar',
+        qBus: 'Necessites bus des de Barcelona?',
+        busYes: 'Sí, anada i tornada',
+        busNo: 'No, hi vaig pel meu compte',
+        qTrip: 'Viatges des de l\'Argentina?',
+        tripSi: 'Sí',
+        tripNo: 'No, visc aquí',
+        tripIn: 'Arribo a Barcelona',
+        tripOut: 'Tornada',
+        tripHint: 'Tenint les dates podem preparar algun planet per a aquells dies',
+        night: 'nit a Barcelona',
+        nights: 'nits a Barcelona',
+        qDiet: 'Al·lèrgies o dieta',
+        dietPh: 'Vegetarià, sense gluten, al·lèrgies…',
+        qNote: 'Alguna cosa que ens vulguis dir',
+        notePh: 'Una cançó que no pot faltar, per exemple',
+        send: 'Enviar',
+        thanksTitle: 'Apuntat',
+        thanksBody: 'Gràcies per confirmar. T\'escriurem uns dies abans amb els detalls que falten',
+        thanksTitleNo: 'Apuntat',
+        thanksBodyNo: 'Oh, quina llàstima :(. Et trobarem a faltar!',
+        again: 'Canviar la meva resposta'
+      }
+    }
+  };
+
+  componentDidMount() {
+    const l = (navigator.language || 'es').toLowerCase();
+    if (!l.startsWith('ca')) return;
+    const p = {};
+    ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's'].forEach(k => { p[k] = { ...this.state[k], lang: 'ca' }; });
+    this.setState(p);
+  }
+
+  upd(k, patch) { this.setState(st => ({ [k]: { ...st[k], ...patch } })); }
+
+  view(k) {
+    const o = this.state[k];
+    const t = this.copy[o.lang];
+    const cap = w => w ? w.charAt(0).toUpperCase() + w.slice(1) : '';
+    const name = cap(o.n.trim().split(' ')[0]);
+    const rsvp = o.rsvp || {};
+    return {
+      ...o,
+      t,
+      isLogin: o.screen === 'login',
+      markColor: '#B05A3B',
+      bandBase: '#F5E8D2',
+      showBand: o.screen !== 'login',
+      isHola: o.screen === 'hola',
+      holaParas: (t.hola.body || '').split('\n\n'),
+      gardenP1: (t.garden.body || '').split('\n\n')[0],
+      gardenP2: (t.garden.body || '').split('\n\n')[1],
+      closeHola: () => this.upd(k, { screen: 'hub' }),
+      isHub: o.screen === 'hub',
+      isBoda: o.screen === 'boda',
+      isDormir: o.screen === 'dormir',
+      isReco: o.screen === 'reco',
+      isGarden: o.screen === 'garden',
+      isList: o.screen === 'dormir' || o.screen === 'reco',
+      pg: t[o.screen === 'reco' ? 'reco' : 'dormir'],
+      isRsvp: o.screen === 'rsvp' && !rsvp.sent,
+      isThanks: o.screen === 'rsvp' && !!rsvp.sent,
+      thanksTitle: rsvp.going === 'no' ? (t.rsvp.thanksTitleNo || t.rsvp.thanksTitle) : t.rsvp.thanksTitle,
+      thanksBody: rsvp.going === 'no' ? (t.rsvp.thanksBodyNo || t.rsvp.thanksBody) : t.rsvp.thanksBody,
+      navItems: t.items.map(it => ({ ...it, sym: '#sy-' + ({ boda: 'sol', dormir: 'mont', reco: 'porro', garden: 'moon', rsvp: 'pinguino' }[it.key] || 'panot'), go: () => this.upd(k, { screen: it.key }) })),
+      mBorderYes: rsvp.going === 'yes' ? '#B05A3B' : 'rgba(176,90,59,.3)',
+      mBgYes: rsvp.going === 'yes' ? '#B05A3B' : 'transparent',
+      mFgYes: rsvp.going === 'yes' ? '#F5E8D2' : '#B05A3B',
+      mBorderNo: rsvp.going === 'no' ? '#C9773F' : 'rgba(176,90,59,.3)',
+      mBgNo: rsvp.going === 'no' ? '#C9773F' : 'transparent',
+      mFgNo: rsvp.going === 'no' ? '#F5E8D2' : '#B05A3B',
+      mBorderBusYes: rsvp.bus === 'yes' ? '#B05A3B' : 'rgba(176,90,59,.3)',
+      mBgBusYes: rsvp.bus === 'yes' ? '#B05A3B' : 'transparent',
+      mFgBusYes: rsvp.bus === 'yes' ? '#F5E8D2' : '#B05A3B',
+      mBorderBusNo: rsvp.bus === 'no' ? '#B05A3B' : 'rgba(176,90,59,.3)',
+      mBgBusNo: rsvp.bus === 'no' ? '#B05A3B' : 'transparent',
+      mFgBusNo: rsvp.bus === 'no' ? '#F5E8D2' : '#B05A3B',
+      toHub: () => this.upd(k, { screen: 'hub' }),
+      rsvp,
+      goYes: rsvp.going === 'yes',
+      goNo: rsvp.going === 'no',
+      busYes: rsvp.bus === 'yes',
+      busNo: rsvp.bus === 'no',
+      dietVal: rsvp.diet || '',
+      noteVal: rsvp.note || '',
+      tripYes: rsvp.trip === 'yes',
+      tripNo: rsvp.trip === 'no',
+      setTripYes: () => this.upd(k, { rsvp: { ...rsvp, trip: 'yes' } }),
+      setTripNo: () => this.upd(k, { rsvp: { ...rsvp, trip: 'no', tripIn: '', tripOut: '' } }),
+      setTripIn: e => this.upd(k, { rsvp: { ...rsvp, tripIn: e.target.value } }),
+      setTripOut: e => this.upd(k, { rsvp: { ...rsvp, tripOut: e.target.value } }),
+      tripInVal: rsvp.tripIn || '',
+      tripOutVal: rsvp.tripOut || '',
+      hBorderTripYes: rsvp.trip === 'yes' ? '.5px solid #B05A3B' : '.5px solid rgba(176,90,59,.28)',
+      hBgTripYes: rsvp.trip === 'yes' ? '#B05A3B' : 'transparent',
+      hFgTripYes: rsvp.trip === 'yes' ? '#F5E8D2' : '#B05A3B',
+      hBorderTripNo: rsvp.trip === 'no' ? '.5px solid #B05A3B' : '.5px solid rgba(176,90,59,.28)',
+      hBgTripNo: rsvp.trip === 'no' ? '#B05A3B' : 'transparent',
+      hFgTripNo: rsvp.trip === 'no' ? '#F5E8D2' : '#B05A3B',
+      hWtYes: rsvp.going === 'yes' ? 600 : 400,
+      hWtNo: rsvp.going === 'no' ? 600 : 400,
+      hWtBusYes: rsvp.bus === 'yes' ? 600 : 400,
+      hWtBusNo: rsvp.bus === 'no' ? 600 : 400,
+      hWtTripYes: rsvp.trip === 'yes' ? 600 : 400,
+      hWtTripNo: rsvp.trip === 'no' ? 600 : 400,
+      showTripDates: rsvp.trip === 'yes',
+      tripNights: (() => {
+        if (!rsvp.tripIn || !rsvp.tripOut) return '';
+        const d = (new Date(rsvp.tripOut) - new Date(rsvp.tripIn)) / 86400000;
+        if (!(d > 0)) return '';
+        return d + ' ' + (d === 1 ? t.rsvp.night : t.rsvp.nights);
+      })(),
+      setGoingYes: () => this.upd(k, { rsvp: { ...rsvp, going: 'yes' } }),
+      setGoingNo: () => this.upd(k, { rsvp: { ...rsvp, going: 'no' } }),
+      setBusYes: () => this.upd(k, { rsvp: { ...rsvp, bus: 'yes' } }),
+      setBusNo: () => this.upd(k, { rsvp: { ...rsvp, bus: 'no' } }),
+      borderYes: rsvp.going === 'yes' ? '#5B7C5C' : 'rgba(51,44,36,.22)',
+      bgYes: rsvp.going === 'yes' ? '#5B7C5C' : 'transparent',
+      fgYes: rsvp.going === 'yes' ? '#F4EFE2' : '#332C24',
+      borderNo: rsvp.going === 'no' ? '#8B7355' : 'rgba(51,44,36,.22)',
+      bgNo: rsvp.going === 'no' ? '#8B7355' : 'transparent',
+      fgNo: rsvp.going === 'no' ? '#F4EFE2' : '#332C24',
+      borderBusYes: rsvp.bus === 'yes' ? '#5B7C5C' : 'rgba(51,44,36,.22)',
+      bgBusYes: rsvp.bus === 'yes' ? '#5B7C5C' : 'transparent',
+      fgBusYes: rsvp.bus === 'yes' ? '#F4EFE2' : '#332C24',
+      borderBusNo: rsvp.bus === 'no' ? '#5B7C5C' : 'rgba(51,44,36,.22)',
+      bgBusNo: rsvp.bus === 'no' ? '#5B7C5C' : 'transparent',
+      fgBusNo: rsvp.bus === 'no' ? '#F4EFE2' : '#332C24',
+      oBorderYes: rsvp.going === 'yes' ? '#6F7D45' : 'rgba(78,90,48,.3)',
+      oBgYes: rsvp.going === 'yes' ? '#6F7D45' : 'transparent',
+      oFgYes: rsvp.going === 'yes' ? '#F0EAD8' : '#4E5A30',
+      oBorderNo: rsvp.going === 'no' ? '#C1602F' : 'rgba(78,90,48,.3)',
+      oBgNo: rsvp.going === 'no' ? '#C1602F' : 'transparent',
+      oFgNo: rsvp.going === 'no' ? '#F0EAD8' : '#4E5A30',
+      oBorderBusYes: rsvp.bus === 'yes' ? '#6F7D45' : 'rgba(78,90,48,.3)',
+      oBgBusYes: rsvp.bus === 'yes' ? '#6F7D45' : 'transparent',
+      oFgBusYes: rsvp.bus === 'yes' ? '#F0EAD8' : '#4E5A30',
+      oBorderBusNo: rsvp.bus === 'no' ? '#6F7D45' : 'rgba(78,90,48,.3)',
+      oBgBusNo: rsvp.bus === 'no' ? '#6F7D45' : 'transparent',
+      oFgBusNo: rsvp.bus === 'no' ? '#F0EAD8' : '#4E5A30',
+      eBorderYes: rsvp.going === 'yes' ? '#2E3B1E' : 'rgba(46,59,30,.3)',
+      eBgYes: rsvp.going === 'yes' ? '#2E3B1E' : 'transparent',
+      eFgYes: rsvp.going === 'yes' ? '#F4EEDC' : '#2E3B1E',
+      eBorderNo: rsvp.going === 'no' ? '#C1602F' : 'rgba(46,59,30,.3)',
+      eBgNo: rsvp.going === 'no' ? '#C1602F' : 'transparent',
+      eFgNo: rsvp.going === 'no' ? '#F4EEDC' : '#2E3B1E',
+      eBorderBusYes: rsvp.bus === 'yes' ? '#2E3B1E' : 'rgba(46,59,30,.3)',
+      eBgBusYes: rsvp.bus === 'yes' ? '#2E3B1E' : 'transparent',
+      eFgBusYes: rsvp.bus === 'yes' ? '#F4EEDC' : '#2E3B1E',
+      eBorderBusNo: rsvp.bus === 'no' ? '#2E3B1E' : 'rgba(46,59,30,.3)',
+      eBgBusNo: rsvp.bus === 'no' ? '#2E3B1E' : 'transparent',
+      eFgBusNo: rsvp.bus === 'no' ? '#F4EEDC' : '#2E3B1E',
+      fBorderYes: rsvp.going === 'yes' ? '#B9532A' : 'rgba(122,46,12,.3)',
+      fBgYes: rsvp.going === 'yes' ? '#B9532A' : 'transparent',
+      fFgYes: rsvp.going === 'yes' ? '#F4EEDC' : '#7A2E0C',
+      fBorderNo: rsvp.going === 'no' ? '#2F3D1C' : 'rgba(122,46,12,.3)',
+      fBgNo: rsvp.going === 'no' ? '#2F3D1C' : 'transparent',
+      fFgNo: rsvp.going === 'no' ? '#F4EEDC' : '#7A2E0C',
+      fBorderBusYes: rsvp.bus === 'yes' ? '#B9532A' : 'rgba(122,46,12,.3)',
+      fBgBusYes: rsvp.bus === 'yes' ? '#B9532A' : 'transparent',
+      fFgBusYes: rsvp.bus === 'yes' ? '#F4EEDC' : '#7A2E0C',
+      fBorderBusNo: rsvp.bus === 'no' ? '#B9532A' : 'rgba(122,46,12,.3)',
+      fBgBusNo: rsvp.bus === 'no' ? '#B9532A' : 'transparent',
+      fFgBusNo: rsvp.bus === 'no' ? '#F4EEDC' : '#7A2E0C',
+      gBorderYes: rsvp.going === 'yes' ? '#6F7D45' : 'rgba(51,64,27,.35)',
+      gBgYes: rsvp.going === 'yes' ? '#6F7D45' : 'transparent',
+      gFgYes: rsvp.going === 'yes' ? '#F0EAD8' : '#33401B',
+      gBorderNo: rsvp.going === 'no' ? '#C1602F' : 'rgba(51,64,27,.35)',
+      gBgNo: rsvp.going === 'no' ? '#C1602F' : 'transparent',
+      gFgNo: rsvp.going === 'no' ? '#F0EAD8' : '#33401B',
+      gBorderBusYes: rsvp.bus === 'yes' ? '#6F7D45' : 'rgba(51,64,27,.35)',
+      gBgBusYes: rsvp.bus === 'yes' ? '#6F7D45' : 'transparent',
+      gFgBusYes: rsvp.bus === 'yes' ? '#F0EAD8' : '#33401B',
+      gBorderBusNo: rsvp.bus === 'no' ? '#6F7D45' : 'rgba(51,64,27,.35)',
+      gBgBusNo: rsvp.bus === 'no' ? '#6F7D45' : 'transparent',
+      gFgBusNo: rsvp.bus === 'no' ? '#F0EAD8' : '#33401B',
+      hBorderYes: rsvp.going === 'yes' ? '.5px solid #B05A3B' : '.5px solid rgba(176,90,59,.28)',
+      hBgYes: rsvp.going === 'yes' ? '#B05A3B' : 'transparent',
+      hFgYes: rsvp.going === 'yes' ? '#F5E8D2' : '#B05A3B',
+      hBorderNo: rsvp.going === 'no' ? '.5px solid #B05A3B' : '.5px solid rgba(176,90,59,.28)',
+      hBgNo: rsvp.going === 'no' ? '#B05A3B' : 'transparent',
+      hFgNo: rsvp.going === 'no' ? '#F5E8D2' : '#B05A3B',
+      hBorderBusYes: rsvp.bus === 'yes' ? '.5px solid #B05A3B' : '.5px solid rgba(176,90,59,.28)',
+      hBgBusYes: rsvp.bus === 'yes' ? '#B05A3B' : 'transparent',
+      hFgBusYes: rsvp.bus === 'yes' ? '#F5E8D2' : '#B05A3B',
+      hBorderBusNo: rsvp.bus === 'no' ? '.5px solid #B05A3B' : '.5px solid rgba(176,90,59,.28)',
+      hBgBusNo: rsvp.bus === 'no' ? '#B05A3B' : 'transparent',
+      hFgBusNo: rsvp.bus === 'no' ? '#F5E8D2' : '#B05A3B',
+      setDiet: e => this.upd(k, { rsvp: { ...rsvp, diet: e.target.value } }),
+      setNote: e => this.upd(k, { rsvp: { ...rsvp, note: e.target.value } }),
+      send: () => {
+        const cur = this.state[k];
+        const g = (typeof window !== 'undefined' && window.INVITADOS && this.findGuest(cur.n, cur.s)) || null;
+        const url = (typeof window !== 'undefined' && window.RSVP_ENDPOINT) || '';
+        if (url) {
+          try {
+            fetch(url, {
+              method: 'POST',
+              mode: 'no-cors',
+              headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+              body: JSON.stringify({
+                nombre: (g && g.nombre) || cur.n,
+                apellido: (g && g.apellido) || cur.s,
+                apodo: cur.apodo || '',
+                going: rsvp.going || '',
+                bus: rsvp.bus || '',
+                diet: rsvp.diet || '',
+                note: rsvp.note || '',
+                trip: rsvp.trip || '',
+                tripIn: rsvp.tripIn || '',
+                tripOut: rsvp.tripOut || '',
+                lang: cur.lang || ''
+              })
+            }).catch(() => {});
+          } catch (e) {}
+        }
+        this.upd(k, { rsvp: { ...rsvp, sent: true } });
+      },
+      resend: () => this.upd(k, { rsvp: { ...rsvp, sent: false } }),
+      opEs: o.lang === 'es' ? 1 : 0.35,
+      opCa: o.lang === 'ca' ? 1 : 0.35,
+      greet: 'Hola, ' + (o.apodo || name),
+      greetShort: ((o.apodo || name) || 'C & E').toUpperCase(),
+      setEs: () => this.upd(k, { lang: 'es' }),
+      setCa: () => this.upd(k, { lang: 'ca' }),
+      setN: e => this.upd(k, { n: e.target.value, err: '' }),
+      setS: e => this.upd(k, { s: e.target.value, err: '' }),
+      back: () => this.upd(k, { screen: 'login' }),
+      enter: () => {
+        const cur = this.state[k];
+        if (!cur.n.trim() || !cur.s.trim()) return this.upd(k, { err: this.copy[cur.lang].errEmpty });
+        const list = (typeof window !== 'undefined' && window.INVITADOS) || null;
+        const g = list ? this.findGuest(cur.n, cur.s) : null;
+        if (list && !g) return this.upd(k, { err: this.copy[cur.lang].errNotFound });
+        this.upd(k, { screen: 'hola', err: '', apodo: (g && g.apodo) || cur.n.trim(), lang: (g && g.lang) || cur.lang });
+      }
+    };
+  }
+
+  renderVals() {
+    return { i: this.view('i') };
+  }
+}
+
+</script>
+</body>
+</html>
