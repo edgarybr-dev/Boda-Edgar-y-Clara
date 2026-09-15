@@ -8,7 +8,7 @@
 
 // Pegá aquí la URL de la aplicación web de Apps Script (ver apps-script-confirmaciones.js).
 // Mientras esté vacío, el formulario funciona pero no guarda nada en la hoja.
-window.RSVP_ENDPOINT = '';
+window.RSVP_ENDPOINT = 'https://script.google.com/macros/s/AKfycbwFz-tQD7NgeIcZfDEMdjy-dZoAXRgW1KbiLlRrA0oPPUfeT6Op9p0iU7WXav_ZdTM1/exec';
 
 window.INVITADOS_SHEET = 'https://docs.google.com/spreadsheets/d/1tLa82pSr_pufbl-aYJ49UZC1oi0qs6DFPf_1BsCzTdc/gviz/tq?tqx=out:csv&gid=0';
 
